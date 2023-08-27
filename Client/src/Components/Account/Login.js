@@ -82,19 +82,19 @@ const Login = () => {
         userInfo: decoded,
       })
     );
-    await AddUser(decoded);
-    // .then((result) => {
-    //   if (result.data.success === true) {
-    //     setObj(result.data.data);
-    //   } else {
-    //     handleCustomException(enqueueSnackbar, result.data);
-    //   }
-    //   setIsLoading(false);
-    // })
-    // .catch((err) => {
-    //   handleException(enqueueSnackbar, err);
-    //   setIsLoading(true);
-    // });
+    await AddUser(decoded)
+      .then((result) => {
+        if (result.data.success === true) {
+          setObj(result.data.data);
+        } else {
+          handleCustomException(enqueueSnackbar, result.data);
+        }
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        handleException(enqueueSnackbar, err);
+        setIsLoading(true);
+      });
   };
 
   const onLoginError = (res) => {

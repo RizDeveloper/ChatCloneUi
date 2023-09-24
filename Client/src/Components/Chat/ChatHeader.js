@@ -1,6 +1,8 @@
 import React from "react";
-import { Grid, Avatar } from "@mui/material";
+import { Grid, Avatar, IconButton } from "@mui/material";
 import { useSelector } from "react-redux";
+import SearchIcon from "@mui/icons-material/Search";
+import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 const ChatHeader = () => {
   const currentEntity = useSelector((state) => state.currentEntity);
@@ -50,7 +52,12 @@ const ChatHeader = () => {
       </Grid>
       <Grid item md={6.8}></Grid>
       <Grid item md={2}>
-        abcddd
+        <IconButton>
+          <SearchIcon />
+        </IconButton>
+        <IconButton>
+          <MoreVertIcon />
+        </IconButton>
       </Grid>
     </Grid>
   );

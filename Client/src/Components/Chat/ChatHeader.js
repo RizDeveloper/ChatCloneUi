@@ -1,8 +1,8 @@
 import React from "react";
-import { Grid, Avatar, IconButton } from "@mui/material";
+import { Grid, Avatar, IconButton, Typography } from "@mui/material";
 import { useSelector } from "react-redux";
-import SearchIcon from "@mui/icons-material/Search";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
+import SearchIcon from "../../Svg/SearchIcon";
+import MoreVertIcon from "../../Svg/MoreVertIcon";
 
 const ChatHeader = () => {
   const currentEntity = useSelector((state) => state.currentEntity);
@@ -38,24 +38,58 @@ const ChatHeader = () => {
           />
         </Avatar>
       </Grid>
-      <Grid
-        item
-        md={3}
-        sx={{
-          // marginLeft: "15px",
-          marginTop: "10px",
-          marginBottom: "15px",
-          fontSize: "18px",
-        }}
-      >
-        {currentEntity.currentUserInfo.name}
+      <Grid item md={3}>
+        <Typography
+          sx={{
+            marginLeft: "-5px",
+            marginTop: "10px",
+            cursor: "pointer",
+            fontSize: "18px",
+            color: "#fff",
+            // font: "inherit",
+            // fontWeight: "bold",
+          }}
+        >
+          {currentEntity.currentUserInfo.name}
+        </Typography>
+        <Typography
+          sx={{
+            marginTop: "0px",
+            marginBottom: "20px",
+            marginLeft: "54px",
+            marginRight: "0px",
+            display: "flex",
+            fontSize: "12px",
+            color: "#8696a0",
+          }}
+        >
+          Last seen
+        </Typography>
       </Grid>
       <Grid item md={6.8}></Grid>
-      <Grid item md={2}>
-        <IconButton>
+      <Grid item md={2} sx={{ marginLeft: "auto", end: "2px" }}>
+        <IconButton
+          sx={{
+            // marginRight: "8px",
+            marginLeft: "50px",
+            marginBottom: "10px",
+            marginTop: "12px",
+            color: "#8696a0",
+            fontWeight: "bold",
+          }}
+        >
           <SearchIcon />
         </IconButton>
-        <IconButton>
+        <IconButton
+          sx={{
+            // marginRight: "8px",
+            marginLeft: "8px",
+            marginBottom: "10px",
+            marginTop: "12px",
+            color: "#8696a0",
+            fontWeight: "bold",
+          }}
+        >
           <MoreVertIcon />
         </IconButton>
       </Grid>

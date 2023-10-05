@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { Grid, Avatar, IconButton, Menu, MenuItem } from "@mui/material";
 import ChatIcon from "@mui/icons-material/Chat";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
+import MoreVertIcon from "../../Svg/MoreVertIcon";
 import Status from "../../Svg/Status";
 import InfoDrawer from "../Drawer/InfoDrawer";
 

@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import { qrCodeImage } from "../../Constants/Data";
 import Settings from "../../Svg/Setting";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
+import MoreVertIcon from "../../Svg/MoreVertIcon";
 import { GoogleLogin } from "@react-oauth/google";
 import jwt_decode from "jwt-decode";
 import { useDispatch } from "react-redux";

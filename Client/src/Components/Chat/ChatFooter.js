@@ -1,7 +1,9 @@
 import React from "react";
-import { Grid } from "@mui/material";
+import { Grid, Avatar } from "@mui/material";
+import { useSelector } from "react-redux";
 
 const ChatFooter = () => {
+  const currentEntity = useSelector((state) => state.currentEntity);
   return (
     <Grid
       container

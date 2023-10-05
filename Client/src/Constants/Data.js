@@ -12,7 +12,7 @@ export const clientId =
   "219718376194-okleon3s94h12v22kcsbjk4c44v9mf2c.apps.googleusercontent.com";
 
 // WhatsApp Chat Background Image used in component Messages.jsx
-export const chatBackgroud =
+export const chatBackground =
   "https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png";
 
 // GOCSPX - mD - PYjQyNuGz4lorq4JNA3LycFCX;

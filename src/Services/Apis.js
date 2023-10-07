@@ -1,7 +1,8 @@
 import axios from "axios";
+import { backendUrl } from "../Constants/Data";
 
 // const url = "http://localhost:8000";
-const url = "https://rizchatbackend.onrender.com";
+const backendUrl = "https://rizchatbackend.onrender.com";
 
 export const AddUser = async (data) => {
   let add = await axios.post(`${url}/add`, data);
